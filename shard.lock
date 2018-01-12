@@ -1,0 +1,22 @@
+version: 1.0
+shards:
+  attempt:
+    github: mosop/attempt
+    version: 0.1.0
+
+  calling:
+    github: mosop/calling
+    version: 0.1.0
+
+  commander:
+    github: mrrooijen/commander
+    version: 0.3.3
+
+  crystal_plus:
+    github: mosop/crystal_plus
+    version: 0.1.4
+
+  run:
+    github: mosop/run
+    version: 0.8.3
+

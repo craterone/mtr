@@ -1,0 +1,21 @@
+name: mtr
+version: 0.1.0
+
+authors:
+  - caelums <ccaelums@gmail.com>
+
+targets:
+  mtr:
+    main: src/mtr.cr
+
+crystal: 0.23.1
+
+license: MIT
+
+dependencies:
+  run:
+    github: mosop/run
+    version: ~> 0.8.3
+  commander:
+    github: mrrooijen/commander
+    version: ~> 0.3.3
