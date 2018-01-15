@@ -1,5 +1,4 @@
 require "./mtr/*"
-require "run"
 require "json"
 require "http/client"
 require "commander"
@@ -30,12 +29,11 @@ module Mtr
       server = options.string["server"]
 
       puts "start testing..."
-      io = IO::Memory.new
-      camd = Run::Command.new("mtr", ["-j", address], output: io)
-      camd.run.wait
 
-      result = io.to_s
-      io.close
+      output = IO::Memory.new
+      Process.run("mtr", ["-jn", "baidu.com"], output: output)
+      result = output.to_s
+      output.close
 
       # puts result
       HTTP::Client.post(server, headers: HTTP::Headers{"Content-Type" => "application/json"}, body: result) do |response|
