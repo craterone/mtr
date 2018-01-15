@@ -40,7 +40,7 @@ module Mtr
       puts "start testing..."
 
       output = IO::Memory.new
-      Process.run("mtr", ["-jn", "baidu.com"], output: output)
+      Process.run("mtr", ["-jn", address], output: output)
 
       tmp_result = JSON.parse(output.to_s)
       # puts house.to_json
