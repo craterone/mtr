@@ -46,6 +46,7 @@ module Mtr
       # puts house.to_json
       output.close
 
+      puts "test over , upload the report."
       test_id = Time.new.epoch_ms
       result = JSON.build do |json|
         json.object do
