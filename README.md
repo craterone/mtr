@@ -23,10 +23,10 @@ https://github.com/traviscross/mtr
 ## Usage
 
 ```
-  mtr - MTR command wrapper , and send the report to the server
+   mtr-online - MTR command wrapper , and send the report to the server
 
   Usage:
-    mtr [flags] [arguments]
+    mtr-online [flags] [arguments]
 
   Commands:
     help [command]  # Help about any command.
@@ -34,7 +34,8 @@ https://github.com/traviscross/mtr
   Flags:
     -a, --address  # The address for mtr test. default: 'baidu.com'.
     -h, --help     # Help for this command. default: 'false'.
-    -s, --server   # The server for storing the report. default: 'http://localhost:3000/record'.
+    -n, --name     # the name of the tester  default: 'abc'.
+    -s, --server   # The server for storing the report. default: 'http://tmp-test.server.linctime.com:3300/record'.
 ```
 
 
