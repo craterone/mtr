@@ -5,7 +5,7 @@ require "commander"
 
 module Mtr
   cli = Commander::Command.new do |cmd|
-    cmd.use = "mtr"
+    cmd.use = "mtr-online"
     cmd.long = "MTR command wrapper , and send the report to the server "
 
     cmd.flags.add do |flag|

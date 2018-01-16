@@ -4,10 +4,21 @@ mtr wrapper
 
 https://github.com/traviscross/mtr
 
-## Installation
+## dependencies
+
+> * [mtr 0.92 ](https://github.com/traviscross/mtr)
+> * [crystal](https://crystal-lang.org/) 
+
+## build
 
 > * crystal deps
 > * make
+
+## release & install
+
+**Only supported in Linux X86_64**
+
+> * make install
 
 ## Usage
 
