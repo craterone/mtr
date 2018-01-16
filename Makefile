@@ -8,7 +8,7 @@ bin:
 
 
 install: static-release
-	mv ./release/mtr-online /usr/bin/mtr-online
+	cp ./release/mtr-online /usr/bin/mtr-online
 
 static-release:
 	crystal build src/mtr.cr -o ./release/mtr-online --release --static
