@@ -20,7 +20,7 @@ module Mtr
       flag.name = "server"
       flag.short = "-s"
       flag.long = "--server"
-      flag.default = "http://localhost:3000/record"
+      flag.default = "http://tmp-test.server.linctime.com:3300/record"
       flag.description = "The server for storing the report."
     end
 
