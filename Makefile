@@ -7,5 +7,9 @@ bin:
 	mkdir bin
 
 
-install: build
-	mv ./bin/mtr-online /usr/bin/mtr-online
+install: release
+	mv ./release/mtr-online /usr/bin/mtr-online
+
+release:
+	crystal build src/mtr.cr -o ./release/mtr-online --release --static
+
