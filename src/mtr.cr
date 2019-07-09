@@ -12,7 +12,7 @@ module Mtr
       flag.name = "address"
       flag.short = "-a"
       flag.long = "--address"
-      flag.default = "baidu.com"
+      flag.required = String
       flag.description = "The address for mtr test."
     end
 
